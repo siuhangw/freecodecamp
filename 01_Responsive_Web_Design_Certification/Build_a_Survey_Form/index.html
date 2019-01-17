@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        
+    </header>
+    <body>
+        <!-- Title -->
+        <div id="title">
+            Survey Form
+        </div>
+
+        <!-- Description -->
+        <div id="description">
+            Let us know how we can improve freeCodeCamp
+        </div>
+
+        <!-- Form -->
+        <form id="survey-form">
+            <!-- Name -->
+            <div id="name">
+                <label id="name-label" for="name">*Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div> 
+            
+            <!-- Email -->
+            <div id="email">
+                <label id="email-label" for="email">*Email:</label>
+                <input type="email" id="email" name="email" placeholder="user@example.com" pattern="+@example.com">
+            </div>
+
+            <!-- Age -->
+            <div id="number">
+                <label id="number-label" for="age">*Age:</label>
+                <input type="number" id="age" name="age" placeholder="30" min="0" max="200"> 
+            </div>
+
+            <!-- Role -->
+            <div id="dropdown">
+                <label id="role-label" for="role">Which option best describes your current role?</label>
+                <input list="role_list" id="role" name="role">
+                <datalist id="role_list">
+                    <option value="Student">
+                    <option value="Full Time Job">
+                    <option value="Full Time Lecturer">
+                    <option value="Prefer Not To Say">
+                    <option value="Others">
+                </datalist>
+            </div>
+
+            <!-- Recommandation -->
+            <div id="recommendation">
+                How likely is that you would recommend freeCodeCamp to a friend?  
+                Definitely
+                Maybe
+                Not sure
+            </div>
+
+            <!-- FCC -->
+            <div id="fcc">
+                What do you like most in FCC:   
+                Challenges
+                Projects
+                Community
+                Open Source
+            </div>
+
+            <!-- Improvement -->
+            <div id="improvement">
+                <p>Things that should be improved in the future (Check all that apply):</p>
+                <input type="radio" id="option-1" name="option-1" value="option-1" checked>
+                <label for="option-1">Front-end Projects</label>
+
+                <input type="radio" id="option-2" name="option-2" value="option-2">
+                <label for="option-2">Back-end Projects</label>
+                
+                <input type="radio" id="option-3" name="option-3" value="option-3">
+                <label for="option-3">Data Visualization</label>
+                
+                <input type="radio" id="option-4" name="option-4" value="option-4">
+                <label for="option-4">Challenges</label>
+                
+                <input type="radio" id="option-5" name="option-5" value="option-5">
+                <label for="option-5">Open Source Community</label>
+                
+                <input type="radio" id="option-6" name="option-6" value="option-6">
+                <label for="option-6">Gitter help rooms</label>
+                
+                <input type="radio" id="option-7" name="option-7" value="option-7">
+                <label for="option-7">Videos</label>
+                
+                <input type="radio" id="option-8" name="option-8" value="option-8">
+                <label for="option-8">City Meetups</label>
+                
+                <input type="radio" id="option-9" name="option-9" value="option-9">
+                <label for="option-9">Wiki</label>
+                
+                <input type="radio" id="option-10" name="option-10" value="option-10">
+                <label for="option-10">Forum</label>
+                
+                <input type="radio" id="option-11" name="option-11" value="option-11">
+                <label for="option-11">Additional Courses</label>
+            </div>
+
+            <!-- Comment & Suggestion -->
+            <div id="comment">
+                Any Comments or Suggestions?   
+                Enter your comment here...
+                Submit
+            </div>
+
+            <!-- Submit -->
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
