@@ -5,7 +5,6 @@ body {
   margin: 0;
   color: #5c8381;
 }
-
 h1,
 h2,
 h3,
@@ -17,7 +16,6 @@ p {
   padding: 0;
   margin: 0;
 }
-
 /* navigation bar */
 nav {
   background-color: #ddece8;
@@ -26,11 +24,9 @@ nav {
   width: 100%;
   position: fixed;
 }
-
 nav a {
   text-decoration: none;
 }
-
 nav ul {
   margin: 0;
   display: flex;
@@ -38,33 +34,49 @@ nav ul {
   justify-content: flex-end;
   list-style-type: none;
 }
-
 nav ul li {
   padding: 10px 20px 10px 20px;
 }
-
 /* main */
 main {
   padding: 0;
   margin: 0;
 }
-
 section {
   padding: 0;
   margin: 0;
+  min-height: 100vh;
   width: 100%;
-  height: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
 }
-#About {
+#welcome-section {
   background-color: #ddece8;
 }
-#Work {
+#projects {
   background-color: #ffffff;
+}
+#project-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* To be changed */
+@media screen, print {
+  #project-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.project-tile {
+  flex-basis: 50%;
 }
 #Contact {
   background-color: #b9fdc2;
@@ -83,7 +95,6 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 footer p {
   text-align: center;
   color: white;
